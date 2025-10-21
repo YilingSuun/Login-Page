@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="form-header">
+        <h2 class="form-title active" data-target="login">Login</h2>
+        <h2 class="form-title" data-target="signup">Sign Up</h2>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-container" class="form-container active">
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="e.g. sun00771" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="e.g. abc123" required>
+            </div>
+            <div class="remember-me">
+                <label for="rememberMe">Remember Me</label>
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div id="forgot-password" class="forgot-password">
+                <a href="./forgot_password.html">Forgot Password?</a>
+            </div>
+            <div class="do-not-have-account">
+                <p>Do not have an account?
+                    <a href="./register.html">Register now</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Sign up Form -->
+    <div id="signup-container" class="form-container">
+
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" placeholder="Choose a username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password"
+                    required>
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+
+        <div id="error-message" class="error-message"></div>
+        <div id="success-message" class="success-message"></div>
+
+    </div>
+</body>
+
+</html>
