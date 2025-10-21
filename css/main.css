@@ -35,6 +35,15 @@ body {
 .container-title {
     cursor: pointer;
     color: gray;
+    padding: 5px;
+}
+
+.container-title:hover {
+    background-color: #d0d3d0;
+}
+
+.container-title:active {
+    transform: scale(0.95);
 }
 
 .container-title.active {
@@ -85,6 +94,26 @@ body {
     background-color: #45a049;
 }
 
+.form-container button:active {
+    transform: scale(0.95);
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a,
+.register-now a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password a:hover,
+.register-now a:hover {
+    text-decoration: underline;
+}
+
 .error-message {
     color: red;
     text-align: center;
@@ -95,18 +124,4 @@ body {
     color: green;
     text-align: center;
     margin-bottom: 15px;
-}
-
-.forgot-password {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.forgot-password a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
 }

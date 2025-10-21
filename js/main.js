@@ -6,6 +6,7 @@ signupContainer.classList.remove('active');
 
 const formTitles = document.querySelectorAll('.container-title');
 
+// Tab switching effect
 formTitles.forEach(title => {
     title.addEventListener('click', () => {
         const target = title.dataset.target;
