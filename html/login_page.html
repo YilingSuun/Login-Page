@@ -10,23 +10,24 @@
 </head>
 
 <body>
-    <div class="form-header">
-        <h2 class="form-title active" data-target="login">Login</h2>
-        <h2 class="form-title" data-target="signup">Sign Up</h2>
-    </div>
-
     <!-- Login Form -->
     <div id="login-container" class="form-container active">
+        <div class="container-header">
+            <h2 class="container-title active" data-target="login">Login</h2>
+            <h2 class="container-title" data-target="signup">Sign Up</h2>
+        </div>
 
         <form id="loginForm">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="e.g. sun00771" required>
             </div>
+
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="e.g. abc123" required>
             </div>
+
             <div class="remember-me">
                 <label for="rememberMe">Remember Me</label>
                 <input type="checkbox" id="rememberMe" name="rememberMe">
@@ -47,25 +48,33 @@
 
     <!-- Sign up Form -->
     <div id="signup-container" class="form-container">
+        <div class="container-header">
+            <h2 class="container-title" data-target="login">Login</h2>
+            <h2 class="container-title active" data-target="signup">Sign Up</h2>
+        </div>
 
         <form id="signupForm">
             <div class="form-group">
                 <label for="newUsername">Username:</label>
                 <input type="text" id="newUsername" name="newUsername" placeholder="Choose a username" required>
             </div>
+
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
+
             <div class="form-group">
                 <label for="newPassword">Password:</label>
                 <input type="password" id="newPassword" name="newPassword" placeholder="Enter password" required>
             </div>
+
             <div class="form-group">
                 <label for="confirmPassword">Confirm Password:</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password"
                     required>
             </div>
+
             <button type="submit">Sign up</button>
         </form>
 

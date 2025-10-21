@@ -4,7 +4,7 @@ const signupContainer = document.getElementById('signup-container');
 loginContainer.classList.add('active');
 signupContainer.classList.remove('active');
 
-const formTitles = document.querySelectorAll('.form-title');
+const formTitles = document.querySelectorAll('.container-title');
 
 formTitles.forEach(title => {
     title.addEventListener('click', () => {
